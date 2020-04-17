@@ -1,0 +1,38 @@
+{
+  "name": "react-complete-guide",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "radium": "^0.26.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:dev": "npm run build:react && npm run build:bundle",
+    "build": "npm run remove:build && npm run build:react && npm run build:bundle",
+    "build:react": "react-scripts build",
+    "build:bundle": "node postbuild",
+    "remove:build": "rm -rf ./react-netsuite-demo && rm -rf ./react-netsuite-demo.zip",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "mv": "^2.1.1",
+    "zip-folder": "^1.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
